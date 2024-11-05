@@ -1,4 +1,4 @@
-/*function getNameFromAuth() {
+function getNameFromAuth() {
     firebase.auth().onAuthStateChanged(user => {
         // Check if a user is signed in:
         if (user) {
@@ -22,7 +22,7 @@
         }
     });
 }
-getNameFromAuth(); //run the function*/
+getNameFromAuth(); //run the function
 
 function insertNameFromFirestore() {
     // Check if the user is logged in:
@@ -130,7 +130,7 @@ function displayCardsDynamically(collection) {
                 newcard.querySelector('.card-text').innerHTML = details;
                 newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; //Example: NV01.jpg
                 newcard.querySelector('a').href = "eachHike.html?docID=" + docID;
-                
+
                 //Optional: give unique ids to all elements for future use
                 // newcard.querySelector('.card-title').setAttribute("id", "ctitle" + i);
                 // newcard.querySelector('.card-text').setAttribute("id", "ctext" + i);
